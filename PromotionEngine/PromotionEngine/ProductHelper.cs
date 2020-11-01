@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PromotionEngine
 {
-    class ProductHelper
+    public class ProductHelper
     {
     }
 }

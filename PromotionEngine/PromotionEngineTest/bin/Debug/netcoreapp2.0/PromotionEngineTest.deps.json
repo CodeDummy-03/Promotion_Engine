@@ -10,7 +10,8 @@
         "dependencies": {
           "MSTest.TestAdapter": "1.2.1",
           "MSTest.TestFramework": "1.2.1",
-          "Microsoft.NET.Test.Sdk": "15.7.0"
+          "Microsoft.NET.Test.Sdk": "15.7.0",
+          "PromotionEngine": "1.0.0"
         },
         "runtime": {
           "PromotionEngineTest.dll": {}
@@ -997,6 +998,11 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "PromotionEngine/1.0.0": {
+        "runtime": {
+          "PromotionEngine.dll": {}
+        }
       }
     }
   },
@@ -1502,6 +1508,11 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "PromotionEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -12,3 +12,6 @@ C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngin
 C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngineTest\obj\Debug\netcoreapp2.0\PromotionEngineTest.AssemblyInfo.cs
 C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngineTest\obj\Debug\netcoreapp2.0\PromotionEngineTest.dll
 C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngineTest\obj\Debug\netcoreapp2.0\PromotionEngineTest.pdb
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngineTest\bin\Debug\netcoreapp2.0\PromotionEngine.dll
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngineTest\bin\Debug\netcoreapp2.0\PromotionEngine.pdb
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngineTest\obj\Debug\netcoreapp2.0\PromotionEngineTest.csproj.CopyComplete
