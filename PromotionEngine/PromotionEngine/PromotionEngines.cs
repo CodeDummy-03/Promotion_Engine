@@ -28,6 +28,10 @@ namespace PromotionEngine
             {
                 Console.WriteLine("Invalid entry. Please try again!!!");
             }
+            catch (ProductEntriesGreaterThanTotalProductsException ex)
+            {
+                Console.WriteLine("Summation of product entries exceeds total product amount. Please try again");
+            }
             finally
             {
                 Console.Read();
@@ -36,23 +40,35 @@ namespace PromotionEngine
 
         private void GetQuantityOfProductsBought()
         {
-            ProductHelper _helper = new ProductHelper();
-            ProductNameToPriceMap = _helper.GetProductNameToPriceMap();
+            try
+            {
+                ProductHelper _helper = new ProductHelper();
+                ProductNameToPriceMap = _helper.GetProductNameToPriceMap();
 
-            Console.WriteLine("Enter total number of products bought");
-            TotalNoOfProductsBought = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter total number of products bought");
+                TotalNoOfProductsBought = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter total number of Product A bought (If none enter 0)");
-            NoOfProductABought = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter total number of Product A bought (If none enter 0)");
+                NoOfProductABought = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter total number of Product B bought (If none enter 0)");
-            NoOfProductBBought = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter total number of Product B bought (If none enter 0)");
+                NoOfProductBBought = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter total number of Product C bought (If none enter 0)");
-            NoOfProductCBought = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter total number of Product C bought (If none enter 0)");
+                NoOfProductCBought = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter total number of Product D bought (If none enter 0)");
-            NoOfProductDBought = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter total number of Product D bought (If none enter 0)");
+                NoOfProductDBought = Int32.Parse(Console.ReadLine());
+
+                if (TotalNoOfProductsBought < (NoOfProductABought + NoOfProductBBought + NoOfProductCBought + NoOfProductDBought))
+                {
+                    throw new ProductEntriesGreaterThanTotalProductsException();
+                }
+            }
+            catch (ProductEntriesGreaterThanTotalProductsException ex)
+            {
+                throw ex;
+            }
         }
 
         public int GetTotalPriceForCheckOut()
