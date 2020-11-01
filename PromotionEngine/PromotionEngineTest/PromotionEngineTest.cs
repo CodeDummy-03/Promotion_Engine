@@ -10,19 +10,20 @@ namespace SampelDemoAppForGitRepoTest
 
         public PromotionEngineTest()
         {
-            //Initialize objects that promotionEngine will be accessing and/required for mocking.
+            promotionEngine = new PromotionEngines();
         }
 
         [TestMethod]
         public void VerifyGetTotalPriceForCheckOutReturnsCorrectValue()
         {
-            
+            // code to specify total number of products,products - A,B,C,D and thiir prices.
+            Assert.AreEqual(280, promotionEngine.GetTotalPriceForCheckOut());
         }
 
         [TestCleanup]
         public void TestCleaup()
         {
-            //De-Initialize used objects in TestInitialize
+            promotionEngine = null;
         }
     }
 }
