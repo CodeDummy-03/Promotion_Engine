@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace PromotionEngine
 {
@@ -18,9 +19,25 @@ namespace PromotionEngine
 
         public int GetTotalPriceForCheckOut()
         {
-            // code to return total price during checkout
+            var priceofA = ProductNameToPriceMap["A"];
+            var priceofB = ProductNameToPriceMap["B"];
+            var priceofC = ProductNameToPriceMap["C"];
+            var priceofD = ProductNameToPriceMap["D"];
 
-            return 0;
+            var totalPriceofA = (NoOfProductABought / 3) * 130 + (NoOfProductABought % 3 * priceofA);
+            var totalPriceofB = (NoOfProductBBought / 2) * 45 + (NoOfProductBBought % 2 * priceofB);
+
+            var noOfProductCDCombo = 0;
+            if (NoOfProductCBought > 0 && NoOfProductDBought > 0)
+            {
+                noOfProductCDCombo = Math.Min(NoOfProductCBought, NoOfProductDBought);
+            }
+
+            var totalPriceofC = (Math.Abs(NoOfProductCBought - noOfProductCDCombo) * priceofC);
+            var totalPriceofD = (Math.Abs(NoOfProductDBought - noOfProductCDCombo) * priceofD);
+            var totalPriceofCDCombo = noOfProductCDCombo * 30;
+
+            return totalPriceofA + totalPriceofB + totalPriceofC + totalPriceofD + totalPriceofCDCombo;
         }
     }
 }
