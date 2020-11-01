@@ -15,12 +15,23 @@ namespace PromotionEngine
         static void Main(string[] args)
         {
             PromotionEngines promotionEngineObject = new PromotionEngines();
-            promotionEngineObject.GetQuantityOfProductsBought();
+            try
+            {
+                promotionEngineObject.GetQuantityOfProductsBought();
 
-            var totalPriceOfProducts = promotionEngineObject.GetTotalPriceForCheckOut();
-            Console.WriteLine("Total Price : " + totalPriceOfProducts);
 
-            Console.Read();
+                var totalPriceOfProducts = promotionEngineObject.GetTotalPriceForCheckOut();
+                Console.WriteLine("Total Price : " + totalPriceOfProducts);
+            }
+
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Invalid entry. Please try again!!!");
+            }
+            finally
+            {
+                Console.Read();
+            }
         }
 
         private void GetQuantityOfProductsBought()
