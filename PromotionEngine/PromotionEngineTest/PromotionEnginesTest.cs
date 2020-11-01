@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PromotionEngine;
 using System.Collections.Generic;
 
-namespace SampelDemoAppForGitRepoTest
+namespace PromotionEngineTest
 {
     [TestClass]
     public class PromotionEnginesTest

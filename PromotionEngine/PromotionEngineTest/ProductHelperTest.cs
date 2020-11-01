@@ -2,7 +2,7 @@
 using PromotionEngine;
 using System.Collections.Generic;
 
-namespace SampelDemoAppForGitRepoTest
+namespace PromotionEngineTest
 {
     [TestClass]
     public class ProductHelperTest

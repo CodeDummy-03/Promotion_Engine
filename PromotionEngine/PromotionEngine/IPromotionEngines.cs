@@ -11,7 +11,6 @@ namespace PromotionEngine
         int NoOfProductCBought { get; set; }
         int NoOfProductDBought { get; set; }
         Dictionary<string, int> ProductNameToPriceMap { get; set; }
-
         int GetTotalPriceForCheckOut();
     }
 }

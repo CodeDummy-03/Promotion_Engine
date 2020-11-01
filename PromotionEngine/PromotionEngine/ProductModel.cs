@@ -1,4 +1,4 @@
-﻿namespace SampleDemoAppForGitRepo
+﻿namespace PromotionEngine
 {
     public class ProductModel
     {
