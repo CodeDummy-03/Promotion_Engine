@@ -1,0 +1,11 @@
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\bin\Debug\netcoreapp2.0\PromotionEngine.deps.json
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\bin\Debug\netcoreapp2.0\PromotionEngine.runtimeconfig.json
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\bin\Debug\netcoreapp2.0\PromotionEngine.runtimeconfig.dev.json
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\bin\Debug\netcoreapp2.0\PromotionEngine.dll
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\bin\Debug\netcoreapp2.0\PromotionEngine.pdb
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.csprojAssemblyReference.cache
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.csproj.CoreCompileInputs.cache
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.AssemblyInfoInputs.cache
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.AssemblyInfo.cs
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.dll
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.pdb

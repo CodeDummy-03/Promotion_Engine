@@ -1,5 +1,5 @@
 # Promotion_Engine
-# Problem Statement 1: Promotion Engine
+# Problem Statement : Promotion Engine
 We need you to implement a simple promotion engine for a checkout process. Our Cart contains a list of single character SKU ids (A, B, C. .. ) over which the promotion engine will need to run.
 The promotion engine will need to calculate the total order value after applying the 2 promotion types
 • Buy 'n' items of a SKU for a fixed price (3 A's for 130)
@@ -10,9 +10,11 @@ Unit price for SKU IDs A 50
 B 30
 C 20
 D 15
+
 Active Promotions
 3 of A's for 130
 2 of B's for 45 C & D for 30
+
 Scenario A
 1 * A 50
 1 * B 30
