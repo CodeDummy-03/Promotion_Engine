@@ -1,28 +1,40 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PromotionEngine;
+using System.Collections.Generic;
+
 namespace SampelDemoAppForGitRepoTest
 {
     [TestClass]
     public class ProductHelperTest
     {
         public ProductHelper productHelper;
+        public List<string> productNamesToVerify;
 
         [TestInitialize]
         public void TestInitialize()
         {
-            //Initialize objects that productHelper will be accessing and/required for mocking.
+            productHelper = new ProductHelper();
+            productNamesToVerify = new List<string> { "A", "B", "C", "D" };
         }
 
         [TestMethod]
         public void GetProductNameToPriceMapReturnsDictionaryWithAllProducts()
         {
+            var productNameToPriceMap = productHelper.GetProductNameToPriceMap();
 
+            Assert.AreEqual(productNamesToVerify.Count, productNameToPriceMap.Count);
+
+            foreach (string productName in productNamesToVerify)
+            {
+                Assert.IsTrue(productNameToPriceMap.ContainsKey(productName));
+            }
         }
 
         [TestCleanup]
         public void TestCleaup()
         {
-            //De-Initialize used objects in TestInitialize
+            productHelper = null;
+            productNamesToVerify = null;
         }
     }
 }

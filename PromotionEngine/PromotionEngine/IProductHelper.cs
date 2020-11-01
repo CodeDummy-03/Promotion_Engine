@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PromotionEngine
 {
-    class IProductHelper
+    public interface IProductHelper
     {
+        Dictionary<string, int> GetProductNameToPriceMap();
     }
 }
