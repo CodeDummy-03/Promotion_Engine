@@ -2,7 +2,7 @@
 
 namespace PromotionEngine
 {
-    class PromotionEngine
+    public class PromotionEngines
     {
         static void Main(string[] args)
         {
