@@ -5,12 +5,12 @@ namespace PromotionEngine
 {
     public interface IPromotionEngines
     {
-        public int TotalNoOfProductsBought { get; set; }
-        public int NoOfProductABought { get; set; }
-        public int NoOfProductBBought { get; set; }
-        public int NoOfProductCBought { get; set; }
-        public int NoOfProductDBought { get; set; }
-        public Dictionary<string, int> ProductNameToPriceMap { get; set; }
+        int TotalNoOfProductsBought { get; set; }
+        int NoOfProductABought { get; set; }
+        int NoOfProductBBought { get; set; }
+        int NoOfProductCBought { get; set; }
+        int NoOfProductDBought { get; set; }
+        Dictionary<string, int> ProductNameToPriceMap { get; set; }
 
         int GetTotalPriceForCheckOut();
     }
