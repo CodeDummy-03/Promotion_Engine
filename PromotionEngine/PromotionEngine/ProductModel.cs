@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PromotionEngine
+﻿namespace SampleDemoAppForGitRepo
 {
-    class ProductModel
+    public class ProductModel
     {
+        public string ProductName { get; set; }
+
+        public int ProductPrice { get; set; }
     }
 }
