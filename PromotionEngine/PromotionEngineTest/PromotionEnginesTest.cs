@@ -10,7 +10,7 @@ namespace SampelDemoAppForGitRepoTest
         public PromotionEngines promotionEngine;
 
         [TestInitialize]
-        public PromotionEnginesTest()
+        public void TestInitialize()
         {
             promotionEngine = new PromotionEngines();
         }
