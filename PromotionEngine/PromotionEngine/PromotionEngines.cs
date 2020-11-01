@@ -14,7 +14,34 @@ namespace PromotionEngine
 
         static void Main(string[] args)
         {
-            
+            PromotionEngines promotionEngineObject = new PromotionEngines();
+            promotionEngineObject.GetQuantityOfProductsBought();
+
+            var totalPriceOfProducts = promotionEngineObject.GetTotalPriceForCheckOut();
+            Console.WriteLine("Total Price : " + totalPriceOfProducts);
+
+            Console.Read();
+        }
+
+        private void GetQuantityOfProductsBought()
+        {
+            ProductHelper _helper = new ProductHelper();
+            ProductNameToPriceMap = _helper.GetProductNameToPriceMap();
+
+            Console.WriteLine("Enter total number of products bought");
+            TotalNoOfProductsBought = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter total number of Product A bought (If none enter 0)");
+            NoOfProductABought = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter total number of Product B bought (If none enter 0)");
+            NoOfProductBBought = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter total number of Product C bought (If none enter 0)");
+            NoOfProductCBought = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter total number of Product D bought (If none enter 0)");
+            NoOfProductDBought = Int32.Parse(Console.ReadLine());
         }
 
         public int GetTotalPriceForCheckOut()

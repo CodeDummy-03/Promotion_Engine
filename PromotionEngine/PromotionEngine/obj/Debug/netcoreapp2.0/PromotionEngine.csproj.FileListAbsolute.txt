@@ -8,3 +8,4 @@ C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngin
 C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.AssemblyInfo.cs
 C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.dll
 C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.pdb
+C:\Users\CodeDummy\source\repos\Promotion_Engine2\PromotionEngine\PromotionEngine\obj\Debug\netcoreapp2.0\PromotionEngine.csprojAssemblyReference.cache
